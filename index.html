@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .contenedor-login {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 90%;
+            max-width: 400px;
+        }
+
+        .contenedor-login img {
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
+
+        .contenedor-login input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+
+        .contenedor-login button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            background: #007BFF;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .contenedor-login .social-login {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contenedor-login .social-login button {
+            margin: 5px 0;
+            background: #000000;
+        }
+
+        .contenedor-login .seccion-registro {
+            margin-top: 20px;
+        }
+
+
+        .boton-registro {
+            background-color: green;
+            color: white;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor-login">
+        <img src="/img/th.jpeg" alt="">
+        <form>
+            <input type="text" placeholder="USUARIO" required>
+            <div style="position: relative;">
+                <input type="password" placeholder="CONTRASEÑA" required>
+                
+            </div>
+            <div style="text-align: left;">
+                <input type="checkbox" id="Recordar">
+                <label for="Recordar">Recordar mi usuario</label>
+            </div>
+            <button type="submit">ACCEDER</button>
+            <p>Ó</p>
+            <div class="social-login">
+                <button type="button">Iniciar sesión con Apple</button>
+                <button type="button">Iniciar sesión con Facebook</button>
+            </div>
+            <a href="#">¿Olvidaste tu contraseña o usuario?</a>
+        </form>
+        <div class="seccion-registro">
+            <p>Regístrate y recibe</p>
+            <span>$1,000</span> DE REGALO
+            <p>+ DUPLICAMOS TU PRIMER DEPÓSITO</p>
+            <button class="boton-registro">REGÍSTRATE</button>
+        </div>
+    </div>
+</body>
+</html>
